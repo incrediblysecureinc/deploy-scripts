@@ -5,3 +5,4 @@ echo "grab package files"
 rsync -rv --exclude=.git ./ /tmp/staging
 echo "prepare package archive"
 tar -cvf /tmp/package.tar /tmp/staging/*
+cp /tmp/package.tar /
